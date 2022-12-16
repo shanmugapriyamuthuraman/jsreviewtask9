@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<input type="text" id="inp1" value="">
+	<input type="text" id="inp2" value="">
+	<input type="text" id="inp3" value="">
+	<button type="button" id="btn">change</button>
+	<h3 id="assending"></h3>
+	<script>
+		let but1=document.getElementById("btn");
+		btn.addEventListener("click",myfunction);
+		function myfunction(){
+			input1=document.getElementById("inp1").value;
+			input2=document.getElementById("inp2").value;
+			input3=document.getElementById("inp3").value;
+			if(input1>input2&&input1>input3){
+			if(input2>input3){
+				document.getElementById("assending").innerHTML=(input3,input2,input1)
+			}
+			else{
+				document.getElementById("assending").innerHtml=(input2,input3,input1)
+			}
+		}
+		else if(input2>input1&&input2>input3){
+			if(input1>input3){
+				document.getElementById("assending").innerHtml=(input3,input1,input2)
+			}
+			else{
+				document.getElementById("assending").innerHtml=(input1,input3,input2)
+			}
+		}
+		else if(input3>input1&&input3>input2){
+			if(x>y){
+				document.getElementById("assending").innerHtml=(input2,input1,input3)
+			}
+			else{
+				document.getElementById("assending").innerHtml=(input1,input2,input3)
+			}
+		}
+			
+		}
+		let x=prompt("enter x number");
+		let y=prompt("enter y number");
+		let z=prompt("enter z number");
+		if(x>y&&x>z){
+			if(y>z){
+				console.log(z,y,x)
+			}
+			else{
+				console.log(y,z,x)
+			}
+		}
+		else if(y>x&&y>z){
+			if(x>z){
+				console.log(z,x,y)
+			}
+			else{
+				console.log(x,z,y)
+			}
+		}
+		else if(z>x&&z>y){
+			if(x>y){
+				console.log(y,x,z)
+			}
+			else{
+				console.log(x,y,z)
+			}
+		}
+	</script>
+</body>
+</html>	
